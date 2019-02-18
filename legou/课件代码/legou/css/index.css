@@ -1,0 +1,150 @@
+/*首页样式*/
+.container{
+	max-width: 750px;
+	margin: 0 auto;
+		/*height: 2000px;
+		background: #777;*/
+}
+.icon{
+	font-family: 'iconfont';
+	font-size: 0.8rem;   /*40px*/
+	color: #fff;
+}
+/*图片响应式*/
+.img-response{
+	width: 100%;
+}
+
+.header{
+	background: #fece02;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	position: relative;
+}
+.header .search{
+	width: 430px;
+	height: 68px;
+	line-height: 68px;
+	background: #fee579;
+	border-radius: 34px;	/*量左右半圆的半径即可*/
+	margin: 0 auto;
+}
+.header .search .icon{
+	margin-left: 22px;
+	margin-right: 25px;
+}
+.header .search input{
+	border: 0;
+	background: none;	/*去掉背景色*/
+	width: 300px;
+	height: 68px;
+	font-size: 0.6rem;	/*30px*/
+	float: left;
+}
+.header .search input::placeholder{
+	color: #fff;
+	font-size: 0.6rem;	/*30px*/
+}
+.header .search input::-webkit-placeholder{
+	color: #fff;
+	font-size: 0.6rem;	/*30px*/
+}
+.header .logo{
+	position: absolute;
+	top: 22px;
+	left: 36px;
+}
+.header .saoma{
+	position: absolute;
+	top: 31px;
+	right: 82px;
+}
+.header .ring{
+	position: absolute;
+	top: 31px;
+	right: 17px;
+}
+/*菜单*/
+.menu{
+	border-bottom: 1px solid #c3c3c3;
+}
+.menu ul li{
+	width: 25%;
+	float: left;
+	text-align: center;
+	padding: 28px 0;
+}
+.menu ul li .icon{
+	width: 92px;
+	height: 92px;
+	line-height: 92px;
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 1rem;
+}
+.menu ul li .mbg1{
+	background: #feb220;
+}
+.menu ul li .mbg2{
+	background: #f26665;
+}
+.menu ul li .mbg3{
+	background: #f6699e;
+}
+.menu ul li .mbg4{
+	background: #fece02;
+}
+.menu ul li p{
+	font-size: 0.48rem;
+	margin-top: 14px;
+}
+.menu ul li a{
+	color: #393939;
+}
+
+/*商品列表*/
+.goods h3{
+	font-size: 1.2rem;
+}
+.goods p{
+	font-size: 0.5rem;
+}
+.goods img{
+	float: right;
+}
+
+/*导航*/
+.nav{
+	/*需要重新设置大小*/
+	max-width: 750px;
+	width: 100%;
+	position: fixed;	/*固定定位*/
+	bottom: 0;
+	/*定位元素居中，跟绝对定位居中一样*/
+	left: 50%;
+	margin-left: -375px;
+	border-top: 1px solid #c3c3c3;
+	padding: 15px 0;
+	background: #fff;
+}
+.nav ul li{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.nav ul li a{
+	color: #949494;
+}
+.nav ul li .icon{
+	color: #949494;
+	font-size: 0.96rem;
+}
+.nav ul li p{
+	font-size: 0.4rem;
+}
+/*底部*/
+.footer{
+	font-size: 0.28rem;
+	text-align: center;
+	color: #949494;
+}

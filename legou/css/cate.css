@@ -1,0 +1,136 @@
+.header-top-fix{
+    position: fixed;
+    width: 750px;
+    z-index: 3;
+}
+
+
+.main-left{
+    width: 177px;
+    position: fixed;
+    top: 102px;
+    left: 50%;
+    margin-left: -375px;
+    overflow-y: scroll;
+}
+
+.main-left ul li{
+    height: 89px;
+    width: 177px;
+    display: block;
+    border-bottom: 2px solid #d4d4d4;
+    list-style: none;
+    line-height: 89px;
+    font-size: 0.6rem;
+    color: #3c3c3c;
+    text-align: center;
+    font-weight: 500;
+    background: #f8f8f8;
+}
+
+.focus-left{
+    border-left: 3px solid #fece02;
+    color: #fea31e!important;
+    width: 174px!important;
+    background: #fff!important;
+}
+.main-right{
+    width: 573px;
+    overflow-y: scroll;
+    height: 1100px;
+    margin-top:102px;
+}
+.box{
+    display: none;
+}
+.main-right .foots-t{
+    width: 558px;
+    padding-left: 15px;
+    background: #f8f8f8;
+    color: #565656;
+    height: 55px;
+    font-size: 0.6rem;
+    line-height: 55px;
+}
+.main-right .foots{
+    position: relative;
+    text-align: left;
+    padding-top: 20px;
+    width: 548px;
+    margin-left: 25px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #a1a1a1;
+}
+.main-right .foots .pic{
+    text-align: right;
+    overflow: hidden;
+    padding-left: 16px;
+    width: 134px;   
+}
+.foot-text{
+    width: 368px;
+    margin-left: 30px;
+}
+.main-right .foots h1{
+    font-size: 0.55rem;
+    font-weight: normal;
+    line-height: 34px;
+    display: block;
+}
+
+.main-right .foots h1 span{
+    display: block;
+    float: left;
+    font-size: 0.42rem;
+    line-height: 31px;
+    padding:0 1px;
+    border-radius: 15px;
+    color: #ff4100;
+    border: 2px solid #ff4100;
+    text-align: center;
+    margin-right: 5px;
+
+}
+
+.main-right .foots .song{
+    width: 96px;
+    display: block;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 0.4rem;
+    border-radius: 8px;
+    color: #fff;
+    background: #f85252;
+    text-align: right;
+    padding: 7px 0;
+    margin-top: 13px;
+    margin-bottom: 5px;
+}
+.main-right .foots .num{
+    display: block;
+    font-size: 0.56rem;
+    color: #929091;
+}
+.main-right .foots .yuan{
+    display: block;
+    font-size: 0.59rem;
+    color: #ff4100;
+}
+.main-right .foots b{
+    color: #fa4100;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    line-height: 44px;
+    border-radius: 40px;
+    border: 3px solid #e0e0e0;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    font-size: 0.7rem;
+}
+
+
+
+

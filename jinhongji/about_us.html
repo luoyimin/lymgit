@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>关于金鸿基</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"> -->
+    <meta name="viewport" content="width=750,target-densitydpi=device-dpi,maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript">
+        function setWidth(e) { if (/Andriod/i.test(navigator.userAgent)) { var f, d = window.innerWidth; (d != e) && (f = d / e), document.addEventListener("DOMContentLoaded", function () { var a = document.getElementsByTagName("body")[0]; a.style.webkitTransformOrigin = "left top"; a.style.webkitTransform = "scale(" + f + ")" }, !1) } } setWidth(750);
+    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!--标准mui.css-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <!--App自定义的css-->
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/about_us.css" />
+</head>
+
+<body>
+    <!--侧滑菜单容器  - 最大容器-->
+    <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+        <!--右侧菜单部分-->
+
+
+        <aside id="offCanvasSide" class="mui-off-canvas-right my-mui-draggable">
+            <div id="offCanvasSideScroll" class="mui-scroll-wrapper ">
+                <div class="mui-scroll ">
+                    <div class="content my-content">
+                        <p>
+                            <button id="offCanvasHide" type="button" class="mui-btn mui-btn-danger mui-btn-block my-btn">×</button>
+                        </p>
+                    </div>
+                    <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted my-table-view my-mui-table-view-cell">
+                        <li class="mui-table-view-cell my-mui-table-view-cell">
+                            <a href="index.html" class="mui-navigate-right my-mui-navigate-right">
+                                首页
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell my-mui-table-view-cell">
+                            <a href="contact_us.html" class="mui-navigate-right my-mui-navigate-right">
+                                关于金鸿基
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell my-mui-table-view-cell">
+                            <a href="match.html" class="mui-navigate-right my-mui-navigate-right">
+                                赛事中心
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell my-mui-table-view-cell">
+                            <a href="video_list.html" class="mui-navigate-right my-mui-navigate-right">
+                                赛事视频
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell my-mui-table-view-cell">
+                            <a href="apply_team.html" class="mui-navigate-right my-mui-navigate-right">
+                                报名中心
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell my-mui-table-view-cell">
+                            <a href="team_detail.html" class="mui-navigate-right my-mui-navigate-right">
+                                直播间
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell my-mui-table-view-cell">
+                            <a href="about_us.html" class="mui-navigate-right my-mui-navigate-right">
+                                公司资讯
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell my-mui-table-view-cell">
+                            <a href="my-team.html" class="mui-navigate-right my-mui-navigate-right">
+                                服务中心
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell my-mui-table-view-cell">
+                            <a href="contact_us.html" class="mui-navigate-right my-mui-navigate-right">
+                                联系我们
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footbtn">
+                        <a href="register.html" class="my-text">
+                            登录
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+
+
+        <!--主页部分-->
+        <div class="mui-inner-wrap">
+
+            <!-- off-canvas backdrop  遮罩层-->
+            <div class="mui-off-canvas-backdrop"></div>
+
+
+
+            <!--页面头部-->
+            <header class="mui-bar mui-bar-nav my-mui-bar">
+                <a class="mui-action-back mui-icon mui-pull-left">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <h1 class="mui-title"></h1>
+                <a id="offCanvasBtn" href="#offCanvasSide" class="mui-icon mui-icon-bars mui-pull-right my-nav"></a>
+            </header>
+
+
+            <!--页面内容-->
+            <div id="offCanvasContentScroll" class=" mui-scroll-wrapper">
+                <div class="mui-content my-mui-content">
+                    <div id="slider" class="mui-slider">
+                        <div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted"
+                        style="height: 1366px; ">
+                            <a class="mui-control-item mui-active" href="#item1mobile">
+                                公司简介
+                            </a>
+                            <a class="mui-control-item" href="#item2mobile">
+                                企业文化
+                            </a>
+                            <a class="mui-control-item" href="#item3mobile">
+                                组织架构
+                            </a>
+                            <a class="mui-control-item" href="#item4mobile">
+                                赛场风采
+                            </a>
+                        </div>
+                        <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+                        <div class="mui-slider-group" style="height: 400px; height: 1150px;">
+                            <!-- 1 -->
+                            <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                                <div id="scroll1" class="mui-scroll-wrapper">
+                                    <div class="mui-scroll">
+                                        <img src="images/about_us_1.png" alt="">
+                                        <!-- 文字 -->
+                                        <h3>关于金鸿基</h3>
+                                        <p>广东金鸿基体育产业发展有限公司 ,是一家成立于2016年8</p>
+                                        <p>前正 处于一个黄金发展期 , 每年产值超过 1万亿 美金中国</p>
+                                        <p>处于一个 黄金发展期,每年产值超过1万亿美金 。中国在国</p>
+                                        <p>务院 2014年 发布支持体育产业发展的《46号文》以来,目</p>
+                                        <p>前该行业正朝着 “2025年达5万亿人民币” 的目标发力狂奔</p>
+                                        <p>。不过,体育产业与其他产业存在明显的区别：它除了承载</p>
+                                        <p>巨大的经济价值外,还具备提高全民身体素质、振奋民族。</p>
+                                        <p style="opacity: 0">end</p>
+                                        <p style="opacity: 0">end</p>
+                                        <p style="opacity: 0">end</p>
+                                        <p style="opacity: 0">end</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2 -->
+                            <div id="item2mobile" class="mui-slider-item mui-control-content">
+                                <div id="scroll2" class="mui-scroll-wrapper">
+                                    <div class="mui-scroll">
+                                        <img src="images/about_us_1.png" alt="">
+                                        <!-- 文字 -->
+                                        <h3>关于金鸿基</h3>
+                                        <p>广东金鸿基体育产业发展有限公司 ,是一家成立于2016年8</p>
+                                        <p>前正 处于一个黄金发展期 , 每年产值超过 1万亿 美金中国</p>
+                                        <p>处于一个 黄金发展期,每年产值超过1万亿美金 。中国在国</p>
+                                        <p>务院 2014年 发布支持体育产业发展的《46号文》以来,目</p>
+                                        <p>前该行业正朝着 “2025年达5万亿人民币” 的目标发力狂奔</p>
+                                        <p>。不过,体育产业与其他产业存在明显的区别：它除了承载</p>
+                                        <p>巨大的经济价值外,还具备提高全民身体素质、振奋民族。</p>
+                                        <p style="opacity: 0">end</p>
+                                        <p style="opacity: 0">end</p>
+                                        <p style="opacity: 0">end</p>
+                                        <p style="opacity: 0">end</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3 -->
+                            <div id="item3mobile" class="mui-slider-item mui-control-content">
+                                <div id="scroll3" class="mui-scroll-wrapper">
+                                    <div class="mui-scroll">
+                                        <img src="images/about_us_1.png" alt="">
+                                        <!-- 文字 -->
+                                        <h3>关于金鸿基</h3>
+                                        <p>广东金鸿基体育产业发展有限公司 ,是一家成立于2016年8</p>
+                                        <p>前正 处于一个黄金发展期 , 每年产值超过 1万亿 美金中国</p>
+                                        <p>处于一个 黄金发展期,每年产值超过1万亿美金 。中国在国</p>
+                                        <p>务院 2014年 发布支持体育产业发展的《46号文》以来,目</p>
+                                        <p>前该行业正朝着 “2025年达5万亿人民币” 的目标发力狂奔</p>
+                                        <p>。不过,体育产业与其他产业存在明显的区别：它除了承载</p>
+                                        <p>巨大的经济价值外,还具备提高全民身体素质、振奋民族。</p>
+                                        <p style="opacity: 0">end</p>
+                                        <p style="opacity: 0">end</p>
+                                        <p style="opacity: 0">end</p>
+                                        <p style="opacity: 0">end</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4 -->
+                            <div id="item4mobile" class="mui-slider-item mui-control-content">
+                                <div id="scroll4" class="mui-scroll-wrapper">
+                                    <div class="mui-scroll">
+                                        <img src="images/about_us_1.png" alt="">
+                                        <!-- 文字 -->
+                                        <h3>关于金鸿基</h3>
+                                        <p>广东金鸿基体育产业发展有限公司 ,是一家成立于2016年8</p>
+                                        <p>前正 处于一个黄金发展期 , 每年产值超过 1万亿 美金中国</p>
+                                        <p>处于一个 黄金发展期,每年产值超过1万亿美金 。中国在国</p>
+                                        <p>务院 2014年 发布支持体育产业发展的《46号文》以来,目</p>
+                                        <p>前该行业正朝着 “2025年达5万亿人民币” 的目标发力狂奔</p>
+                                        <p>。不过,体育产业与其他产业存在明显的区别：它除了承载</p>
+                                        <p>巨大的经济价值外,还具备提高全民身体素质、振奋民族。</p>
+                                        <p style="opacity: 0">end</p>
+                                        <p style="opacity: 0">end</p>
+                                        <p style="opacity: 0">end</p>
+                                        <p style="opacity: 0">end</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+    mui.init({
+        swipeBack: false
+    });
+    (function ($) {
+        $('.mui-scroll-wrapper').scroll({
+            indicators: true //是否显示滚动条
+        });
+        var html2 = '<img src="images/about_us_1.png" alt="">';
+        var html3 = '<img src="images/about_us_1.png" alt="">';
+        var html4 = '<img src="images/about_us_1.png" alt="">';
+        var item2 = document.getElementById('item2mobile');
+        var item3 = document.getElementById('item3mobile');
+        var item4 = document.getElementById('item4mobile');
+        document.getElementById('slider').addEventListener('slide', function (e) {
+            if (e.detail.slideNumber === 1) {
+                if (item2.querySelector('.mui-loading')) {
+                    setTimeout(function () {
+                        item2.querySelector('.mui-scroll').innerHTML = html2;
+                    }, 500);
+                }
+            } else if (e.detail.slideNumber === 2) {
+                if (item3.querySelector('.mui-loading')) {
+                    setTimeout(function () {
+                        item3.querySelector('.mui-scroll').innerHTML = html3;
+                    }, 500);
+                }
+            } else if (e.detail.slideNumber === 3) {
+                if (item4.querySelector('.mui-loading')) {
+                    setTimeout(function () {
+                        item4.querySelector('.mui-scroll').innerHTML = html4;
+                    }, 500);
+                }
+            }
+        });
+        var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+        $('.mui-input-group').on('change', 'input', function () {
+            if (this.checked) {
+                sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+                //force repaint
+                sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+            }
+        });
+    })(mui);
+
+    var href=document.getElementsByClassName('my-mui-navigate-right');
+    console.log(href);
+    for (var i = 0; i < href.length; i++) {
+        href[i].ontouchend = function () {
+            window.location.href = this.getAttribute("href");
+        }
+    };
+    var href=document.getElementsByClassName('my-text');
+    console.log(href);
+    for (var i = 0; i < href.length; i++) {
+        href[i].ontouchend = function () {
+            window.location.href = this.getAttribute("href");
+        }
+    };
+</script>
+
+</html>

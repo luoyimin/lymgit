@@ -1,0 +1,79 @@
+.my-mui-content{
+	background: #fff;
+}
+.icons .con3{
+	position: absolute;
+	top:0;
+	left:15px;
+}
+.icons .con1{
+	position: absolute;
+	top:12px;
+	right: 15px;
+}
+.icons .con2{
+	position: absolute;
+	top:6px;
+	left:50%;
+	margin-left:-15px ;
+}
+.contents{
+	margin-right: 36px;
+	margin-top:50px;
+	margin-left:30px;
+}
+.contents h1{
+	font-size:.48rem;
+	color: #000000;
+	margin:0;
+	margin-bottom:25px;
+}
+.contents .world{
+	background: #e5f5fc;
+	padding-top:12px;
+	padding-bottom:7px;
+}
+.contents .world table tr td{
+	font-size: .36rem;
+	color: #252525;
+	height: 30px;
+	line-height: 30px;
+
+}
+.contents .world table tr td:first-child{
+	width: 146px;
+	text-align: right;
+}
+
+.contents .price{
+	margin-top: 72px;
+	margin-bottom:34px;
+	text-align: right;
+	color: #009ce6;
+	font-weight:bold;
+	font-size: .48rem;
+}
+.contents .world img{
+	display: block;
+	float: left;
+}
+.btn-go{
+	padding-bottom:20px;
+}
+.btn-go a{
+	display: block;
+	height:80px;
+	width:284px;
+	border-radius: 5px;
+	background: #009ce6;
+	color: #fff;
+	font-size: .72rem;
+	margin: 0 auto;
+	margin-top:53px;
+	text-align: center;
+	line-height: 80px;
+	border:1px solid #b5b5b5;
+}
+.btn-go a:hover{
+	color: #b1b1b1;
+}

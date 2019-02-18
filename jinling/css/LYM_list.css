@@ -1,0 +1,118 @@
+.main{
+    width: 570px;
+    margin-right: 115px;
+}
+
+.main .title{
+    text-align: center;
+    width: 205px;
+    margin: 0 auto;
+}
+
+.main .title h1{
+    font-size: 24px;  
+}
+
+.main .title p{
+    line-height: 24px;
+    font-size: 12px;  
+    color: #9d9d9d;
+}
+.main .card{
+    width: 570px;
+    padding-top: 28px;
+    padding-bottom:28px;
+    transition: all .5s;
+}
+.main .first{
+    padding-top: 18px;
+}
+.main .card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transform: translateY(5px) ;
+    
+}
+.main .card img{
+    width: 108px;
+    height: 108px;
+    float: left;
+}
+.main .card .text{
+    float: left;
+    width: 402px;
+    margin-left: 35px;
+}
+.main .card .text h1{
+    color: #00284d;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.main .card .text h1 span{
+    color: #a5a5a5;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    float:right;
+}
+.main .card .text p{
+    width: 415px;
+    font-size: 13px;
+    color: #929292;
+    line-height: 16px;
+}
+.main .card .text a{
+    color: #929292;
+    font-size: 13px;
+    float: right;
+}
+.main .card .text a:hover{
+    color: #709ec8;
+    font-weight: bold;
+}
+
+
+/* 分页代码 */
+.main .page{
+    width: 570px;
+}
+.main .page ul{
+    display: block;
+    padding-left: 12px;
+    width: 570px;
+    overflow: hidden;
+}
+.main .page ul li{
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    line-height: 39px;
+    width: 39px;
+    color: #3f3f3f;
+    float: left;
+    height: 39px;
+    border: 1px solid #e3e3e3;
+    font-size: 14px;
+    margin: 20px 2px 48px 2px;  
+}
+.main .page ul li.p1{
+    width: 60px;
+}
+.main .page ul li:first-child,.main .page ul li:last-child{
+    background: #cecece;
+}
+.main .page ul li:nth-child(2){
+    background: #0195df;
+    color: #fff;
+}
+.main .page ul span{
+    display: block;
+    text-align: center;
+    line-height: 39px;
+    color: #3f3f3f;
+    float: left;
+    height: 39px;
+    font-size: 14px;
+    margin: 20px 5px 48px 5px;  
+}
+
+

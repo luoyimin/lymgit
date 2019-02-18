@@ -1,0 +1,45 @@
+
+.mui-off-canvas-wrap .my-mui-inner-wrap{
+    background:white;
+}
+.my-mui-content{
+    background:none;
+}
+.con_pic_box{
+    padding-top:62px;
+    padding-bottom:74px;
+}
+.con_pic{
+    display:inline-block!important;
+    width:680px!important;
+    border:5px solid #dcdcdc;
+    margin-left:30px;
+ } 
+ .cmp_name{
+     padding-bottom:50px;
+     font-size:0.7rem;
+     color:#00c6ff;
+     margin-left:30px;
+ }
+ .con_way{
+     padding-bottom:44px;
+ }
+ .con_way ul li{
+    list-style: none;
+    font-size:0.44rem;
+    color:#666666;
+    display:block;
+    height:30px;
+ }
+
+ .eq_box{
+     margin-left:30px;
+     padding-bottom:30px;
+ }
+ .eq_box p{
+     margin-left:62px;
+     font-size:0.4rem;
+     color:#333333;
+ }
+
+

@@ -1,0 +1,264 @@
+/*重置样式*/
+html{
+	font-size: 50px;
+}
+.clear{
+	clear: both;
+}
+
+/* 公共样式、左图标位置 */
+.mui-bar-nav.mui-bar .mui-icon{
+	padding-left: 50px;
+}
+
+/* 公共样式、右图标位置 */
+.mui-icon-bars:before{
+	padding-right: 50px;
+	position: absolute;
+    top: 16px;
+    right: 10px;
+}
+
+
+/*首页 图片*/
+
+.look_detail{
+	background-color: #00c6ff;
+	opacity: 1;
+	color: #fff;
+	width: 236px;
+	height: 75px;
+	line-height: 75px;
+	text-align: center;
+	font-size: 0.44rem;
+	text-indent: 0;
+	position: absolute;
+	top: 50%;
+	left: 50px;
+}
+.my-mui-bar{
+	height: 88px;
+	background-color: #00c6ff;
+}
+.my-mui-bar .my-nav{
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.12rem;	/*rem只能相对应html跟标签*/
+}
+.my-mui-content{
+	padding-top:88px!important;
+}
+.my-mui-slider{
+	position: static;
+}
+.my-mui-slider-indicator{
+	bottom: 90px;
+}
+.my-mui-slider-indicator .my-mui-indicator{
+	width: 15px;
+	margin-left: 25px;
+	background: #fff;
+	margin-right: 25px;
+	height: 15px;
+}
+
+/*首页 侧滑菜单 */
+/*侧滑菜单选项的选中时背景颜色*/
+.mui-table-view-inverted .mui-table-view-cell>a:not(.mui-btn).mui-active {
+	background:pink;
+}
+
+.mui-off-canvas-right p {
+	text-indent: 22px;
+	display: block;
+}
+span.mui-icon {
+	font-size: 14px;
+	color: #007aff;
+	margin-left: -15px;
+	padding-right: 10px;
+}
+.mui-off-canvas-right {
+	color: #fff;
+}
+.title {
+	margin: 35px 15px 10px;
+}
+.title+.content {
+	margin: 10px 15px 35px;
+	color: #bbb;
+	text-indent: 1em;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.my-mui-draggable{
+	background: #06c1f5;
+}
+.my-table-view{
+	background: none;
+}
+.mui-table-view-inverted .mui-table-view-cell:after{
+	background: none;
+}
+.mui-table-view-inverted:after{
+	background: none;
+}
+.my-mui-navigate-right{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 0.6rem;
+	line-height: 80px;
+}
+.mui-table-view-chevron .mui-table-view-cell{
+	padding-right:0;
+}
+.mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn){
+	/*margin-right: 0;*/
+	margin-right: 150px;
+	margin-left: 150px;
+	display: block;
+}
+.mui-navigate-right:after, .mui-push-right:after{
+	content: normal;
+}
+.my-btn{
+	width: 111px;
+	float: right;
+	background: none;
+	border: 0;
+	margin-right: 41px;
+	font-size: 1.4rem;
+	margin-top: 30px;
+	padding:0;
+}
+.mui-btn-danger:enabled:active{
+	background: red;
+	border: 0;
+}
+
+.my-content{
+	border: 0;
+	overflow: hidden;
+}
+.my-mui-table-view-cell{
+	padding: 0;
+}
+.mui-table-view-cell>a:not(.mui-btn){
+	margin: 0;
+}
+.mui-table-view-inverted:before{
+	background: none	;
+}
+.footbtn{
+	text-align: center;
+	margin-top: 65px;
+	margin-bottom: 10px;
+}
+.my-text{
+	border-radius: 28px;
+	display: inline-block;
+	font-size: 0.6rem;
+	background: #fff;
+	color: #00c6ff;
+	padding:20px 75px;
+}
+
+
+/* 内容背景颜色覆盖 */
+.mui-inner-wrap{
+	background: #fff;
+}
+
+
+/*页面 apply_team pay complete*/
+.main h1{
+	font-size:.6rem;
+	color: #999999;
+	margin:0;
+	text-align: center;
+	margin-top:73px;
+	margin-bottom:25px;
+}
+.main .icons{
+	height:43px;
+	position: relative;
+	clear: both;
+	margin-left:103px;
+	margin-right:103px;
+}
+.icons .con3{
+	height:43px;
+	width:43px;
+	border-radius:50%;
+	background: #ccf4ff;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.icons .con3 .con3-1{
+	width: 23px;
+	height:23px;
+	border-radius:50%;
+	background: #00c6ff;
+}
+.icons .con3 .con3-1 span.mui-icon{
+	color: #fff;
+	font-size: .65rem;
+	margin-left: -5px;
+	font-weight:bold;
+	margin-top:-3px;
+}
+.icons .con2{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background: #ccf4ff;
+	padding-top:7px;
+	padding-left:7px;
+}
+.icons .con2 .con2-1{
+	width:16px;
+	height:16px;
+	border-radius:50%;
+	background: #00c6ff;
+}
+.icons .con1{
+	width:16px;
+	height:16px;
+	border-radius:50%;
+	background: #efeded;
+}
+.icons .line{
+	margin:0 18px;
+	display: block;
+	padding-top: 20.5px;
+	border-bottom: 2px solid #efeded;
+}
+
+.main .text{
+	margin-bottom:79px;
+	position: relative;
+	margin-left: 46px;
+	margin-right: 46px;
+	margin-top:17px;
+	font-size: .48rem;
+	color: #999999;
+}
+.main .text .text3{
+	position: absolute;
+	top:0;
+	right:40px;
+
+}
+.main .text .text2{
+	position: absolute;
+	top:0;
+	right:50%;
+	margin-right: -75px;
+}
+.bg-color{
+	background: #efeded;
+	height:16px;
+}
+/*end*/

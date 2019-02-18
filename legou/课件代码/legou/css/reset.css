@@ -1,0 +1,48 @@
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,select,textarea,button,th,td,menu{margin:0;padding:0;}
+ul,dl,ol{list-style:none;/*去除默认列表的样式*/}
+img,fieldset,input[type="submit"]{border:0 none;}
+em,i{font-style:normal; /*字体正常，不倾斜*/}
+strong{font-weight:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+button,input[type="button"]{cursor:pointer;/*鼠标经过元素，显示手型*/ border:0 none;}
+a,button,input,img{-webkit-touch-callout:none;}
+img{display:block; /*pointer-events:none;*/  /*禁止图片的点击事件，例如长按保存图片*/}
+input,select,textarea{outline:none;}
+a{text-decoration:none;}
+.fl{ float: left}
+.fr{ float: right}
+.clear{clear:both;} 
+html,body{
+/*禁止用户选择元素(手机页面可以加)*/
+/*-moz-user-select:none;
+ -webkit-user-select: none;
+-ms-user-select: none;
+ -khtml-user-select:none; */
+ /*禁止元素点击出现半透明黑色背景*/
+ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Microsoft YaHei';	/*'Heiti SC', */
+	outline: 0;
+	-webkit-text-size-adjust:none;
+	font-size: 50px;
+}
+body {
+	height: 100%;
+	margin: 0;
+	position: relative;
+	overflow-x: hidden;	/*网页底部不显示滚动条*/
+}
+button, input, select, textarea{
+	font-size: 100%;
+}
+/*自定义字体（公共字体）*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/iconfont.woff') format('woff'),
+  url('../fonts/iconfont.ttf') format('truetype'),
+  url('../fonts/iconfont.svg#iconfont') format('svg');
+}

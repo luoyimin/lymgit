@@ -1,0 +1,99 @@
+/* 头部导航 */
+.mui-slider-indicator.mui-segmented-control{
+    height: 88px;
+}
+.mui-scroll{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+    padding: 0 52px;
+    padding-top: 27px;
+    font-size: .44rem;
+}
+
+.mui-ios .my_cell{
+    padding-top: 50px;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item img:nth-last-child(){
+    padding-top: 40px;
+}
+
+
+
+/* 图片下面导航 */
+.my_cell{
+    padding: 0 30px;
+    border-bottom: 1px solid #fff;
+}
+
+
+  /* 字体样式 */
+.zt p{
+    font-size: .6rem;
+    display: inline-block;
+    padding: 30px 0;
+    color:#333333;
+   
+}
+.zz{
+    float:left;
+}
+
+.zt i{
+    font-size: .44rem;
+    color: #f97700;
+    font-style: normal;
+    float: right;
+}
+.zt i span{
+    font-size: .74rem;
+}
+.zt i{
+    padding-top: 31px;
+}
+
+
+
+
+.zt1 p{
+    font-size: .48rem;
+    color:#666666;
+    display: inline-block;
+    padding-top: 30px;
+    line-height: .96rem;
+}
+.zz1{
+    float: right;
+}
+.zt1 .icon{
+    font-size: .6rem;
+    padding-right: 13px;
+    padding-left: 33px;
+}
+.zt1 .icon1{
+    font-size: .6rem;
+    padding-right: 16px;
+    padding-left: 0;
+}
+
+.zt1 span{
+    color: #f97700;
+    float: right;
+    font-size: .48rem;
+}
+
+.oo{
+    padding-top:55px;
+    padding-bottom:40px;
+
+}
+.mui-fullscreen .mui-segmented-control~.mui-slider-group{
+    top:70px;
+}
+img{
+    width:100%;
+    
+}

@@ -1,0 +1,180 @@
+/*首页样式文件*/
+html{
+    font-size: 50px;
+}
+/*@media screen and (min-width: 1440px){
+	html{
+		font-size: 50px;
+	}
+}*/
+
+/* 引入字体 */
+@font-face{
+    font-family: 'iconfont2';
+    src: url('../font2/iconfont.eot');
+    src: url('../font2/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font2/iconfont.woff') format('woff'),
+    url('../font2/iconfont.ttf') format('truetype'),
+    url('../font2/iconfont.svg#iconfont') format('svg');
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+@media screen and (min-width: 1440px){
+    .my-container-fluid{
+        width: 1440px;
+    }
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+/*屏幕大于等于992px*/
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+    padding-left: 0;
+    padding-right: 0;
+}
+.h1, .h2, .h3, h1, h2, h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p{
+    line-height: 1;
+}
+p{
+    margin: 0;
+}
+
+
+
+
+
+
+
+/*返回顶部样式*/
+#returnTop{
+    text-align:center;
+    background: pink;
+    color: #fff;
+    font-size:14px;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom:100px;
+    right: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .7;
+    display: none;
+
+
+}
+#returnTop:hover{
+    opacity: 1;
+}
+#returnTop p:first-child{
+    margin-top: 5px;
+}
+#returnTop p{
+    padding-top:5px;
+}
+
+/*导航栏样式*/
+/*更改导航样式*/
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+    margin-right: 0;
+}
+.my-nav{
+    background-color: #222;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.my-logo{
+    padding: 7px 15px;
+}
+/*左边的导航链接默认选中的效果*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: #080808;
+    color: #fff;
+}
+/*左边的导航链接经过时的效果*/
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+    background-color: #080808;
+    color: #fff;
+}
+/*右边的语言下拉名称Lanuage的样式*/
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background-color: #080808;
+    color: #fff;
+}
+/*语言下拉展开的列表样式*/
+.dropdown-menu{
+    background-color: #080808;
+    border: 0;
+}
+.dropdown-menu>li>a{
+    color: #fff;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border: 0;
+}
+/*这个只处理手机屏幕的样式*/
+@media screen and (max-width: 767px){
+    .my-nav .nav li a{
+        text-indent: 10px;
+    }
+}
+/*end*/
+
+
+
+/*脚部样式*/
+.foots{
+    background: #3b3b3b;
+    margin-top: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.foots i {
+    position: relative;
+    margin-left: 20px;
+    float: left;
+    text-align: center;
+    display: block;
+    font-style: normal;
+    background: #d8d8e0;
+    color: #4c4c52;
+    font-size: 22px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    font-family: "iconfont2";
+}
+
+.foots  span{
+    display: none;
+    position: absolute;
+    left: -48px;
+    top: -150px;
+}
+.foots i:hover span{
+    display: block;
+}
+.foots p{
+    font-size: 14px;
+    color: #9798a0;
+}
+.foots p a{
+    font-size: 14px;
+    color: #9798a0;
+    margin-right: 15px;
+}
+.foots p:nth-child(3){
+    font-size: 11px;
+    margin-top: 14px;
+}

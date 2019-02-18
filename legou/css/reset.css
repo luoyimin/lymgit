@@ -1,0 +1,203 @@
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,select,textarea,button,th,td,menu{margin:0;padding:0;}
+ul,dl,ol{list-style:none;/*去除默认列表的样式*/}
+img,fieldset,input[type="submit"]{border:0 none;}
+em,i{font-style:normal; /*字体正常，不倾斜*/}
+strong{font-weight:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+button,input[type="button"]{cursor:pointer;/*鼠标经过元素，显示手型*/ border:0 none;}
+a,button,input,img{-webkit-touch-callout:none;}
+img{display:block; /*pointer-events:none;*/  /*禁止图片的点击事件，例如长按保存图片*/}
+.img{display: block;width: 100%}
+input,select,textarea{outline:none;}
+a{text-decoration:none;}
+.fl{ float: left}
+.fr{ float: right}
+.clear{clear:both;} 
+html,body{
+/*禁止用户选择元素(手机页面可以加)*/
+/*-moz-user-select:none;
+ -webkit-user-select: none;
+-ms-user-select: none;
+ -khtml-user-select:none; */
+ /*禁止元素点击出现半透明黑色背景*/
+ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Microsoft YaHei';	/*'Heiti SC', */
+	outline: 0;
+	-webkit-text-size-adjust:none;
+	font-size: 50px;;
+}
+body {
+    /*background: #fff;*/
+    line-height: normal;
+	overflow-x:hidden;
+	height: 100%;
+	margin: 0;
+	position: relative;
+}
+button, input, select, textarea{
+	font-size: 100%;
+}
+/*自定义字体（公共字体）*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/iconfont.woff') format('woff'),
+  url('../fonts/iconfont.ttf') format('truetype'),
+  url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+@font-face {
+    font-family: 'iconfont2';
+    src: url('../fonts2/iconfont.eot');
+    src: url('../fonts2/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts2/iconfont.woff') format('woff'),
+    url('../fonts2/iconfont.ttf') format('truetype'),
+    url('../fonts2/iconfont.svg#iconfont') format('svg');
+  }
+
+/* 最大容器 */
+.container{
+    width: 750px;
+    margin: 0 auto;
+}
+
+/* 头部样式 */
+.header{
+    padding-bottom: 17px;
+    background: #fece02;
+    padding-top: 17px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -375px;
+    width: 750px;
+    z-index: 3;
+}
+
+.icon{
+    font-family: "iconfont";
+    font-size: 0.8rem;
+    color: #fff;
+    
+}
+.header .search .icon{
+    margin-left: 22px;
+    margin-right: 25px;
+}
+.header .logo{
+    position: absolute;
+    top: 22px;
+    left: 36px;
+}
+.header .saoma{
+    position: absolute;
+    top: 31px;
+    right: 82px;
+}
+.header .ring{
+    position: absolute;
+    top: 31px;
+    right: 17px;
+}
+.rings{
+    -webkit-animation: alarm 8ms infinite;
+    animation: alarm 8ms infinite;
+}
+@-webkit-keyframes alarm {
+    0% {
+        -webkit-transform-origin: top right;
+        -webkit-transform: rotate(6deg);
+    }
+
+    50% {
+        -webkit-transform-origin: top left;
+        -webkit-transform: rotate(-6deg);
+    }
+
+    100% {
+        -webkit-transform-origin: top right;
+        -webkit-transform: rotate(6deg);
+    }
+}
+
+.header .search{
+    width: 430px;
+    line-height: 68px;
+    background: #fee579;
+    border-radius: 34px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.header .search input{
+    
+    float: left;
+    height: 68px;
+    border: 0;
+    width: 318px;
+    background: none;
+    font-size: 0.6rem;
+}
+.header .search input::placeholder{
+    color: #fff;
+    font-size: 0.6rem;
+}
+.header .search input::-webkit-placeholder{
+    color: #fff;
+    font-size: 0.6rem;
+}
+
+/* 导航 */
+
+
+.nav{
+    z-index: 3;
+    background:#ffffff;
+    position: fixed;
+    width: 100%;
+    max-width: 750px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -375px;
+    border-top:1px solid #c3c3c3;
+    padding:15px 0;
+}
+.nav ul{
+    display: block;
+    overflow: hidden;
+}
+.nav ul li{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.nav ul li a{
+    color: #949494;
+}
+.nav ul li .icon{
+    color: #949494;
+    font-size: 0.96rem;
+}
+.nav ul li p{
+    font-size: 0.4rem;
+}
+
+.nav ul li .focus i,.nav ul li .focus p{
+    color: #fea31e;
+}
+
+
+
+
+/* 底部   */
+.footer{
+    background: #fff;
+    padding: 10px 0;
+	font-size: 0.28rem;
+	text-align: center;
+    color: #949494;
+    margin-bottom: 105px;
+}

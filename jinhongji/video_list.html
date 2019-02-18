@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>详情页</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"> -->
+	<meta name="viewport" content="width=750,target-densitydpi=device-dpi,maximum-scale=1.0, user-scalable=no">
+	<script type="text/javascript">
+		function setWidth(e) { if (/Andriod/i.test(navigator.userAgent)) { var f, d = window.innerWidth; (d != e) && (f = d / e), document.addEventListener("DOMContentLoaded", function () { var a = document.getElementsByTagName("body")[0]; a.style.webkitTransformOrigin = "left top"; a.style.webkitTransform = "scale(" + f + ")" }, !1) } } setWidth(750);
+	</script>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!--标准mui.css-->
+	<link rel="stylesheet" href="css/mui.min.css">
+	<!--App自定义的css-->
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/video_list.css" />
+	<!-- 视频的 -->
+	
+    <link type="text/css" href="css/base.css" rel="stylesheet" />
+    <link type="text/css" href="css/Inside.css" rel="stylesheet" />
+   
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+
+	<base target="_blank" />
+	<!--  -->
+	<style>
+		.mui-slider-indicator .mui-active.mui-indicator{
+			background: #00c6ff;
+			height: 20px;
+			width: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<!--侧滑菜单容器  - 最大容器-->
+	<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+		<!--右侧菜单部分-->
+		<aside id="offCanvasSide" class="mui-off-canvas-right my-mui-draggable">
+			<div id="offCanvasSideScroll" class="mui-scroll-wrapper ">
+				<div class="mui-scroll ">
+					<div class="content my-content">
+						<p>
+							<button id="offCanvasHide" type="button" class="mui-btn mui-btn-danger mui-btn-block my-btn">×</button>
+						</p>
+					</div>
+					<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted my-table-view my-mui-table-view-cell">
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="index.html" class="mui-navigate-right my-mui-navigate-right">
+								首页
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="contact_us.html" class="mui-navigate-right my-mui-navigate-right">
+								关于金鸿基
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="match.html" class="mui-navigate-right my-mui-navigate-right">
+								赛事中心
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="video_list.html" class="mui-navigate-right my-mui-navigate-right">
+								赛事视频
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="apply_team.html" class="mui-navigate-right my-mui-navigate-right">
+								报名中心
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="team_detail.html" class="mui-navigate-right my-mui-navigate-right">
+								直播间
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="about_us.html" class="mui-navigate-right my-mui-navigate-right">
+								公司资讯
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="my-team.html" class="mui-navigate-right my-mui-navigate-right">
+								服务中心
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="contact_us.html" class="mui-navigate-right my-mui-navigate-right">
+								联系我们
+							</a>
+						</li>
+					</ul>
+					<div class="footbtn">
+						<a href="register.html" class="my-text">
+							登录
+						</a>
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		<!--主页部分-->
+		<div class="mui-inner-wrap">
+			<!--页面头部-->
+			<header class="mui-bar mui-bar-nav my-mui-bar">
+				<a class="mui-action-back mui-icon mui-pull-left">
+					<img src="images/logo.png" alt="">
+				</a>
+				<h1 class="mui-title"></h1>
+				<a id="offCanvasBtn" href="#offCanvasSide" class="mui-icon mui-icon-bars mui-pull-right my-nav"></a>
+			</header>
+			<!--页面内容-->
+			<div class="mui-content">
+				<div id="slider" class="mui-slider">
+					<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+						<a class="mui-control-item" href="#item1mobile">
+							中国足球
+						</a>
+						<a class="mui-control-item" href="#item2mobile">
+							国际足球
+						</a>
+						<a class="mui-control-item" href="#item3mobile">
+							NBA
+						</a>
+					</div>
+
+					<div class="mui-slider-group">
+						<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+							<div id="scroll1" class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<div class="tanchuang">
+										<div class="box"></div>
+										<span></span>
+									</div>
+									<div class="bg"></div>
+									<div class="dycon container clearfix">
+										<ul id="ItemBox" class="clearfix">
+											<li><span class="img"><img src="images/video_list_01.png" /><a>2017-11-23</a></span>
+												<div class="clearfix dyconm">
+													<div class="dyconml">斩12强赛首胜+击碎恐韩...</div>
+												</div>
+												<div class="videopath"><iframe frameborder="0" height="100%" src="https://v.qq.com/iframe/player.html?vid=z0566z2bmjm&tiny=0&auto=0"
+													 allowfullscreen></iframe></div>
+											</li>
+											<li><span class="img"><img src="images/video_list_02.png" /><a>2017-11-23</a></span>
+												<div class="clearfix dyconm">
+													<div class="dyconml">斩12强赛首胜+击碎恐韩...</div>
+												</div>
+												<div class="videopath"><iframe frameborder="0" height="100%" src="https://v.qq.com/iframe/player.html?vid=z0566z2bmjm&tiny=0&auto=0"
+													 allowfullscreen></iframe></div>
+											</li>
+											<li><span class="img"><img src="images/video_list_03.png" /><a>2017-11-23</a></span>
+												<div class="clearfix dyconm">
+													<div class="dyconml">斩12强赛首胜+击碎恐韩...</div>
+												</div>
+												<div class="videopath"><iframe frameborder="0" height="100%" src="https://v.qq.com/iframe/player.html?vid=z0566z2bmjm&tiny=0&auto=0"
+													 allowfullscreen></iframe></div>
+											</li>
+											<li><span class="img"><img src="images/video_list_04.png" /><a>2017-11-23</a></span>
+												<div class="clearfix dyconm">
+													<div class="dyconml">斩12强赛首胜+击碎恐韩...</div>
+												</div>
+												<div class="videopath"><iframe frameborder="0" height="100%" src="https://v.qq.com/iframe/player.html?vid=z0566z2bmjm&tiny=0&auto=0"
+													 allowfullscreen></iframe></div>
+											</li>
+											<li><span class="img"><img src="images/video_list_05.png" /><a>2017-11-23</a></span>
+												<div class="clearfix dyconm">
+													<div class="dyconml">斩12强赛首胜+击碎恐韩...</div>
+												</div>
+												<div class="videopath"><iframe frameborder="0" height="100%" src="https://v.qq.com/iframe/player.html?vid=z0566z2bmjm&tiny=0&auto=0"
+													 allowfullscreen></iframe></div>
+											</li>
+											<li><span class="img"><img src="images/video_list_06.png" /><a>2017-11-23</a></span>
+												<div class="clearfix dyconm">
+													<div class="dyconml">斩12强赛首胜+击碎恐韩...</div>
+												</div>
+												<div class="videopath"><iframe frameborder="0" height="100%" src="https://v.qq.com/iframe/player.html?vid=z0566z2bmjm&tiny=0&auto=0"
+													 allowfullscreen></iframe></div>
+											</li>
+									
+										</ul>
+
+										<div class="more1" id="more"><a href="javascript:void(0);" target="_self" onClick="loadPage('2');"><img src="images/etjz.png"
+												 width="12" height="12"> 加载更多</a></div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="item2mobile" class="mui-slider-item mui-control-content">
+							<div id="scroll2" class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<div class="mui-loading">
+										<div class="mui-spinner">
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div id="item3mobile" class="mui-slider-item mui-control-content">
+							<div id="scroll3" class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<div class="mui-loading">
+										<div class="mui-spinner">
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- off-canvas backdrop -->
+			<div class="mui-off-canvas-backdrop"></div>
+		</div>
+	</div>
+</body>
+
+
+<script src="js/mui.min.js"></script>
+<script src="js/common.js"></script>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+
+<script>
+	mui.init({
+		swipeBack: false
+	});
+	(function ($) {
+		$('.mui-scroll-wrapper').scroll({
+			indicators: true //是否显示滚动条
+		});
+		var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+		var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+		var item2 = document.getElementById('item2mobile');
+		var item3 = document.getElementById('item3mobile');
+		document.getElementById('slider').addEventListener('slide', function (e) {
+			if (e.detail.slideNumber === 1) {
+				if (item2.querySelector('.mui-loading')) {
+					setTimeout(function () {
+						item2.querySelector('.mui-scroll').innerHTML = html2;
+					}, 500);
+				}
+			} else if (e.detail.slideNumber === 2) {
+				if (item3.querySelector('.mui-loading')) {
+					setTimeout(function () {
+						item3.querySelector('.mui-scroll').innerHTML = html3;
+					}, 500);
+				}
+			}
+		});
+		var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+		$('.mui-input-group').on('change', 'input', function () {
+			if (this.checked) {
+				sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+				//force repaint
+				sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+			}
+		});
+	})(mui);
+</script>
+<script type="text/javascript">
+	$(".tanchuang").hide();
+	$(".dycon li").click(function () {
+		$(".tanchuang").show();
+		$(".bg").show();
+		$(".tanchuang span").show();
+		$(".tanchuang video").show();
+		var _video = $(this).find(".videopath").html();
+		$(".tanchuang .box").html(_video);
+		$(".tanchuang .box video").attr("autoplay", "autoplay");
+		$("body").css("overflow", "hidden");
+	})
+	$(".bg,.tanchuang span").click(function () {
+		$(".tanchuang .box").html("");
+		$(".tanchuang video,.bg,.tanchuang").hide();
+		$("body").css("overflow", "auto")
+	})
+	function loadPage(_page) {
+		$.post("/ashx/showlist.ashx", { action: "getFilm", ClassID: "-1", page: _page, sid: Math.random(1) }, function (data) {
+			if (data == "1") {
+				$("#more").hide();
+				return;
+			} else {
+				$("#more").show();
+				var Arr = data.split('=');
+				$(data.replace(Arr[0] + "=" + Arr[1] + "=", "")).appendTo("#ItemBox");
+				$(".tanchuang").hide();
+				$(".dycon li").click(function () {
+					$(".tanchuang").show();
+					$(".bg").show();
+					$(".tanchuang span").show();
+					$(".tanchuang video").show();
+					var _video = $(this).find(".videopath").html();
+					$(".tanchuang .box").html(_video);
+					$(".tanchuang .box video").attr("autoplay", "autoplay");
+					$("body").css("overflow", "hidden");
+				})
+				$(".bg,.tanchuang span").click(function () {
+					$(".tanchuang .box").html("");
+					$(".tanchuang video,.bg,.tanchuang").hide();
+					$("body").css("overflow", "auto")
+				});
+				if (Arr[1] == "0") {
+					$("#more").hide();
+					return;
+				}
+				$("#more a").attr("onclick", "loadPage('" + Arr[1] + "');");
+			}
+		});
+	}
+
+
+
+</script>
+<!--con1-->
+<!--pic-->
+
+
+
+
+
+
+
+<script type="text/javascript">
+	//弹窗
+	function createDiv(_tipHtml) {
+		var black = document.createElement('div');
+		var div = document.createElement('div');
+		var h3 = document.createElement('h3');
+		var cha = document.createElement('a');
+		var ChildDiv = document.createElement('div');
+		div.className = "alert_prompt";
+		cha.className = "close";
+		ChildDiv.className = "prompt";
+		black.className = "black";
+		div.appendChild(h3);
+		div.appendChild(cha);
+		div.appendChild(ChildDiv);
+		document.body.appendChild(div);
+		document.body.appendChild(black);
+		h3.innerHTML = '提示';
+		cha.innerHTML = '×';
+		ChildDiv.innerHTML = _tipHtml;
+		$('.black').fadeIn();
+		var _hei = $('.prompt').height();
+		$('.alert_prompt').css('height', _hei + 94);
+	}
+	$(function () {
+		//createDiv("内容内容内容<br />内容内容内容<br />内容内容内容<br />内容内容内容<br />");//创建div
+		$('.black,.alert_prompt .close').click(function () {
+			$('.black,.alert_prompt').fadeOut();
+		})
+	});
+
+
+
+    var href=document.getElementsByClassName('my-mui-navigate-right');
+    console.log(href);
+    for (var i = 0; i < href.length; i++) {
+        href[i].ontouchend = function () {
+            window.location.href = this.getAttribute("href");
+        }
+    };
+    var href=document.getElementsByClassName('my-text');
+    console.log(href);
+    for (var i = 0; i < href.length; i++) {
+        href[i].ontouchend = function () {
+            window.location.href = this.getAttribute("href");
+        }
+    };
+</script>
+
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="keywords" content="关键字">
+    <meta name="description" content="描述">
+    <meta name="author" content="作者">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>首页 - Layabox</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- 自定义样式（自己写的） -->
+    <link rel="stylesheet" href="css/common.css">
+    <link href="css/new.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+    <!-- 整个页面的框架 -->
+    <div class="container-fluid my-container-fluid">
+        <!-- 栅格系统结构 -->
+        <!-- 导航部分 -->
+        <div class="row" style="background: #222;">
+            <!-- col-xs-     手机（小于768px）
+            col-sm-     大于手机 平板（大于768px，小于992px）
+            col-md-     大于平板 笔记本电脑（大于992px，小于1200px）->PC
+            col-lg-     大于1200px 台式电脑  -> PC -->
+            <div class="col-md-2 col-lg-2 hidden-xs hidden-sm"></div>
+            <div class="col-md-8 col-lg-8">
+                <!-- 导航结构 -->
+                <nav class="navbar navbar-default my-nav">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand my-logo" href="#">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                        </div>
+
+                        <!-- Collect the nav links, forsm, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <!-- active 活动的 -->
+                                <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">Laya家族</a></li>
+                                <li><a href="#">游戏</a></li>
+                                <li><a href="#">新闻动态</a></li>
+                                <li><a href="#">关于我们</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">中文</a></li>
+                                        <li><a href="#">英文</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+            <div class="col-md-2 col-lg-2 hidden-xs hidden-sm"></div>
+        </div>
+
+        <!-- 新闻动态 -->
+        <div class="row new-row">
+            <div class="col-md-2 col-lg-2 hidden-sm hidden-xs"></div>
+            <div class="col-md-8 col-lg-8">
+                <h1>新闻动态</h1>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                        <div class="box">
+                            <img src="images/new_01.jpg" alt="" class="img-responsive">
+                            <p>技术突破：HTML5裸跑性能已可媲美APP</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                        <div class="box">
+                            <img src="images/new_03.jpg" alt="" class="img-responsive">
+                            <p>HTML5干货：LAYAWORLD  TFC秋季特刊</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                        <div class="box">
+                            <img src="images/new_02.jpg" alt="" class="img-responsive">
+                            <p>慕和：手游大作《魔卡幻想》为何移植HTML5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-lg-2 hidden-sm hidden-xs"></div>
+        </div>
+
+        <!-- 列表 -->
+        <div class="row">
+            <div class="col-md-2 col-lg-2 hidden-sm hidden-xs"></div>
+            <div class="col-md-8 col-lg-8">
+                <div class="media media-zdy ">
+                    <div class="media-left media-middle list-media">
+                        <a href="#">
+                        <img class="media-object" src="images/new_10.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body list-body focus">
+                        <h4 class="media-heading">技术突破：HTML5裸跑性能已可媲美APP</h4>
+                        <span>2016-02-25</span>
+                        <p>Layabox计划在3月限量内测的LayaAir引擎，通过在低端机型上的性能实测以及即将上线的大型裸跑游戏，证明了HTML5裸跑性能已可媲美APP，性能问题将不再成为制约产业发展的瓶颈。</p>
+                        <span class="btn">查看详情</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="media media-zdy">
+                    <div class="media-left media-middle list-media">
+                        <a href="#">
+                        <img class="media-object" src="images/new_10.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body list-body">
+                        <h4 class="media-heading">Layabox吹响进军台湾HTML5市场的号角</h4>
+                        <span>2016-01-29</span>
+                        <p>以本届HTML5游戏峰会为契机，Layabox携多款优质大型HTML5手游吹响了进军台湾的号角，与此同时，Layabox与台湾游戏产业同行就游戏开发、游戏发行、平台合作等业务启动了合作的筹备阶段。猴年春节后，将会有多款大型HTML5手游直接登陆台湾游戏市场。</p>
+                        <span class="btn">查看详情</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="media media-zdy">
+                    <div class="media-left media-middle list-media">
+                        <a href="#">
+                        <img class="media-object" src="images/new_10.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body list-body">
+                        <h4 class="media-heading">微信“应用号”后，Layabox与火速移动结盟力推HTML5应用</h4>
+                        <span>2016-01-15</span>
+                        <p>HTML5商业引擎提供商Layabox与HTML5应用发行商火速移动（Huosumobi），于2016年1月13日正式宣布双方结成全面战略合作联盟。未来从HTML5应用的市场推广、引擎技术、平台、运营、分发等HTML5应用领域的生态进行全方位合作。</p>
+                        <span class="btn">查看详情</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="media media-zdy">
+                    <div class="media-left media-middle list-media">
+                        <a href="#">
+                        <img class="media-object" src="images/new_10.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body list-body">
+                        <h4 class="media-heading">谢成鸿：HTML5引擎将向全行业引擎领域发展</h4>
+                        <span>2016-01-12</span>
+                        <p>Layabox总裁谢成鸿讲解了HTML5游戏引擎的现状和未来的发展，认为HTML5的性能突破将淘汰单个行业领域的全能引擎，向全行业引擎领域发展，HTML5的3D引擎时代也会提前到来。</p>
+                        <span class="btn">查看详情</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="media media-zdy">
+                    <div class="media-left media-middle list-media">
+                        <a href="#">
+                        <img class="media-object" src="images/new_10.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body list-body">
+                        <h4 class="media-heading">Layabox荣膺“2015年度最佳引擎奖”</h4>
+                        <span>2016-01-07</span>
+                        <p>HTML5梦工场举办的”娜喊杯”2015 HTML5年度颁奖盛典于2016年1月7日在北京古北水镇成功举行。Layabox凭借2015年唯一拥有大型HTML5游戏线上产品的商业引擎供应商优势，荣膺“2015年度最佳引擎奖”。</p>
+                        <span class="btn">查看详情</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="media media-zdy">
+                    <div class="media-left media-middle list-media">
+                        <a href="#">
+                        <img class="media-object" src="images/new_10.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body list-body">
+                        <h4 class="media-heading">Layabox本月将上线四款大型HTML5游戏</h4>
+                        <span>2016-12-10</span>
+                        <p>Layabox一直致力于大型HTML5引擎技术研发和CP培育，从本月开始，将不断推出大型HTML5游戏，我们希望用自己的努力，提升玩家和渠道对HTML5游戏品质以及盈利能力的信心，推动产业的发展和升级。</p>
+                        <span class="btn">查看详情</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="media media-zdy">
+                    <div class="media-left media-middle list-media">
+                        <a href="#">
+                        <img class="media-object" src="images/new_10.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body list-body">
+                        <h4 class="media-heading">关于HTML5游戏跨界合作的几个切入点！</h4>
+                        <span>2015-12-02</span>
+                        <p>要想在当前阶段先跳出来成为瞩目的明星企业。一是制作高品质游戏，兼顾APP与H5市场；二是要深度结合H5技术的无需下载、即点即玩、易传播、跨平台、应用领域广泛等属性。</p>
+                        <span class="btn">查看详情</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="media media-zdy">
+                    <div class="media-left media-middle list-media">
+                        <a href="#">
+                        <img class="media-object" src="images/new_10.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body list-body">
+                        <h4 class="media-heading">HTML5行业首次出席中日韩政府级开源论坛  </h4>
+                        <span>2015-11-26</span>
+                        <p>第十四届东北亚开源软件推进论坛在日本东京举行,本次会议由中日韩三国行业主管部门组织。这是HTML5行业代表首次出市出席东北亚开源软件推进论坛。</p>
+                        <span class="btn">查看详情</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="media media-zdy">
+                    <div class="media-left media-middle list-media">
+                        <a href="#">
+                        <img class="media-object" src="images/new_10.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body list-body">
+                        <h4 class="media-heading">Layabox引擎用HTML5还原3D端游</h4>
+                        <span>2015-11-23</span>
+                        <p>老牌游戏研发商中娱正在用Layabox引擎将著名3D 端游《猎刃》还原到HTML5场景中，Layabox有望成为首个拥有重度3D游戏产品案例的HTML5游戏引擎。</p>
+                        <span class="btn">查看详情</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-lg-2 hidden-sm hidden-xs"></div>
+        </div>
+
+        <!-- 页码 -->
+        <div class="row page">
+            <div class="col-md-2 col-lg-2 hidden-sm hidden-xs"></div>
+            <div class="col-md-8 col-lg-8">
+                <div class="pages">
+                    <ul>
+                        <li>36条</li>
+                        <li>上一页</li>
+                        <li class="focu">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>下一页</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 col-lg-2 hidden-sm hidden-xs"></div>
+        </div>
+
+        <!--//返回顶部-->
+        <div id="returnTop">
+            <p>返回</p>
+            <p>顶部</p>
+        </div>
+
+        <!-- 底部内容 -->
+        <div class="row foots">
+            <div class="col-md-2 col-lg-2 hidden-sm hidden-xs "></div>
+            <div class="col-md-8 col-lg-8 ">
+                <div class="icon pull-right">
+                    <i>&#xe603;<span><img src="images/index_foot.jpg" alt="" class=""></span></i>
+                    <i>&#xe634;<span><img src="images/index_foot.jpg" alt="" class=""></span></i>
+                    <i>&#xe649;<span><img src="images/index_foot.jpg" alt="" class=""></span></i>
+                </div>  
+                <p>
+                    <a href="">公司简介</a>
+                    <a href="">联系方式</a>
+                    <a href="">人才招聘</a>
+                </p>
+                <p>All Copyright Reserved by Layabox Inc. 京ICP备15008163号-1</p>
+                <div class="clearfix"></div> 
+            </div>
+            <div class="col-md-2 col-lg-2 hidden-sm hidden-xs "></div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

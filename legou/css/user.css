@@ -1,0 +1,136 @@
+.top{
+    position: relative;
+    width: 750px;
+    height: 273px;
+    overflow: hidden;
+}
+.top .per span{
+    display: block;
+    width: 172px;
+    height: 172px;
+    border-radius: 86px;
+    overflow: hidden;
+    position: absolute;
+    left: 186px;
+    top: 50px;
+    box-shadow: 0 0 35px rgba(255, 255, 255, .6);
+}
+.top .per p{
+    font-size: 0.66rem;
+    color: #323548;
+    position: absolute;
+    left: 383px;
+    top: 91px;
+}
+.top .per b{
+    font-size: 0.73rem;
+    color: #33364c;
+    position: absolute;
+    left: 383px;
+    top: 145px;
+}
+
+.car{
+    width: 750px;
+    padding-top: 20px;
+    padding-bottom: 33px;
+    border-bottom: 1px solid #c3c3c3;
+    font-family: "iconfont2";
+}
+.car ul{
+    display: block;
+    overflow:hidden;
+}
+.car ul li{
+    float: left;
+    display: block;
+    width: 248px;
+    height: 140px;
+    text-align: center;
+}
+.car ul li:nth-child(2){
+    border-left: 2px solid #c2c2c2;
+    border-right: 2px solid #c2c2c2;
+}
+.car ul li span{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: block;
+}
+.car ul li span.col1{
+    color: #fb8a00;
+}
+.car ul li span.col2{
+    color: #0cace1;
+}
+.car ul li span.col3{
+    color: #f56c33;
+}
+.car ul li p{
+    font-size: 0.65rem;
+    color: #302f2f;
+}
+.cards{
+    background: #f2f2f2;
+    padding-top: 22px;
+    padding-bottom: 220px;
+}
+
+.cards .tex{
+    padding-left: 24px;
+    font-family: "iconfont2";
+    height: 88px;
+    background: #fff;
+    margin-bottom: 22px;
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.cards .not{
+    margin-bottom:0;
+}
+.cards .tex span{
+    text-align: center;
+    float: left;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-right: 22px;
+    margin-top:14px;
+    line-height: 61px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.cards .tex .bg1{
+    background: #8ec666;
+}
+.cards .tex .bg2{
+    background: #fea726;
+}
+.cards .tex .bg3{
+    background: #fa7762;
+}
+.cards .tex .bg4{
+    background: #4da5ef;
+}
+.cards .tex .bg5{
+    background: #8ec765;
+}
+
+.cards .tex p{
+    position: relative;
+    line-height: 88px;
+    color: #302f2f;
+    font-size: 0.7rem;
+}
+.cards .tex p:after{
+	content: '\e65e';		/*原本图标 &#xe604;*/
+	font-family: 'iconfont2';
+	font-size: 18px;
+	position: absolute;
+    right: 35px;
+    color: #dbdbdb;
+    font-size: 0.7rem;
+}

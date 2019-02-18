@@ -1,0 +1,54 @@
+.mui-table-view-cell:after {
+    right:30px;
+    left:30px;
+}
+span{
+color:#999999;
+font-size:.48rem;
+
+}
+.mui-h6, h6{
+    color:#333333;
+    font-size:.6rem;
+}
+p {
+    color:#b3b3b3;
+    font-size:.4rem;
+    line-height: .7rem;
+    overflow: hidden; 
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+}
+.mui-slider-indicator.mui-segmented-control {
+    background-color: #ffffff!important;
+}
+.mui-bar-nav~.mui-content .mui-slider.mui-fullscreen{
+    top:90px;
+}
+.mui-segmented-control{
+    font-size:22px;
+}
+h6 {
+    line-height: 1;
+    margin-top: 18px;
+    margin-bottom: 13px;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item {
+    padding: 32px 52px;
+    font-size: .44rem;}
+.mui-table-view{
+    margin-top: 54px;
+}
+.mui-segmented-control.mui-scroll-wrapper {
+    height: 84px;
+}
+.mui-segmented-control.mui-segmented-control-inverted{
+    padding-left:200px
+}
+.buzhi{
+    padding-left:30px;
+    padding-right:60px;
+    padding-top:55px;
+    padding-bottom: 36px;
+}

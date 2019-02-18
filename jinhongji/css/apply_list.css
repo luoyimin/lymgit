@@ -1,0 +1,99 @@
+/* 头部导航 */
+.mui-slider-indicator.mui-segmented-control{
+    height: 88px;
+}
+.mui-scroll{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+    padding: 0 52px;
+    padding-top: 27px;
+    font-size: .44rem;
+}
+
+.mui-ios .my_cell{
+    padding-top: 60px;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item img:nth-last-child(){
+    padding-top: 40px;
+}
+
+
+
+/* 图片下面导航 */
+.my_cell{
+    padding: 0 30px;
+    margin-top: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+/* 字体库链接 */
+@font-face {
+	font-family: 'iconfont';
+	src: url('../fonts/iconfont.eot');
+	src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2') format('woff2'),
+		url('../fonts/iconfont.woff') format('woff'),
+		url('../fonts/iconfont.ttf') format('truetype'),
+		url('../fonts/iconfont.svg#iconfont') format('svg');
+  }
+.icon,.icon1{
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+
+
+  /* 字体样式 */
+.zt p{
+    font-size: .6rem;
+    display: inline-block;
+    padding: 30px 0;
+}
+.zt i{
+    font-size: .44rem;
+    color: #f97700;
+    font-style: normal;
+    float: right;
+}
+.zt i span{
+    font-size: .74rem;
+}
+.zt i{
+    padding-top: 31px;
+}
+
+
+
+
+.zt1 p{
+    font-size: .4rem;
+    float: left;
+    display: inline-block;
+    padding-bottom: 36px;
+}
+.zt1 .icon{
+    font-size: .6rem;
+    padding-right: 16px;
+    padding-left: 34px;
+}
+.zt1 .icon1{
+    font-size: .6rem;
+    padding-right: 16px;
+    padding-left: 0;
+}
+
+.zt1 span{
+    color: #f97700;
+    float: right;
+    font-size: .48rem;
+}
+
+

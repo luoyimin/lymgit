@@ -1,0 +1,130 @@
+
+
+
+/*猎刃2*/
+.lieRen{
+    margin-top:34px;
+    margin-bottom:49px;
+}
+.lieRen-top{
+    position: relative;
+}
+.lieRen-top span{
+    position: absolute;
+    top: -79px;
+    left: 12px;
+}
+
+.card h1{
+    font-size:0.6rem;
+    color: #2a2a2a;
+    padding-bottom: 15px;
+}
+.lieRen .card .title{
+    display: block;
+    text-align: right;
+}
+.text{
+    font-size: 0.24rem;
+    color:#898989;
+    display: block;
+    overflow: hidden;
+    text-align: right;
+    text-indent: 1em;
+    line-height: 30px;
+
+}
+.pic img{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+/*上吧主公*/
+.zhuGong .text{
+    text-align: left;
+}
+
+/*更多案例*/
+.more{
+    margin-top: 61px;
+    padding-bottom: 40px;
+}
+.more h1{
+    font-size: 0.72rem;
+    color:#010101;
+}
+.box{
+    overflow: hidden;
+    margin:0 9.5px;
+    position: relative;
+    margin-top:38px;
+    margin-bootom:6px;
+}
+.box p{
+    width: 100%;
+    /*height: 100%;*/
+    font-size:0.24rem;
+    color: #fff;
+    line-height: 20px;
+    padding:10px 13px 0 13px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+}
+.text-p{
+    cursor: pointer ;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.box:hover .text-p{
+    display: block;
+}
+.more-title{
+    display: block;
+    text-align: center;
+    margin-top: 13px;
+    font-size: 0.28rem;
+    color:#414141;
+}
+.carousel-indicators .active{
+    background-color: pink;
+}
+
+@media screen and (max-width:1920px){
+	
+}
+@media screen and (max-width:1440px){
+	
+}
+@media screen and (max-width:1280px){
+
+}
+@media screen and (max-width:1200px){
+
+}
+@media screen and (max-width:1024px){
+
+
+}
+@media screen and (max-width:992px){
+
+}
+@media screen and (max-width:751px){
+    .pull-right{
+        margin-right: 62px;
+    }
+    .foots p{
+        padding-left: 10px;
+    }
+}

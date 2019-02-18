@@ -1,0 +1,90 @@
+.my-mui-content{
+    background: #fff;
+}
+.icons .con2{
+    position: absolute;
+    top:6px;
+    left: 15px;
+}
+.icons .con1{
+    position: absolute;
+    top:12px;
+    right: 15px;
+}
+.icons .con1s{
+    position: absolute;
+    top:12px;
+    left:50%;
+    margin-left: -8px;
+}
+.world{
+    margin-top:76px;
+}
+.mui-card .mui-control-content {
+    padding: 10px;
+}
+
+.mui-control-content {
+    height: 470px;
+}
+.my-world-content{
+    background: none;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item{
+    color: #b2b2b2;
+}
+.my-mui-control-item{
+    font-size: 0.6rem;
+    font-weight: bold;
+    display: block;
+    width: 100px;
+}
+.mui-segmented-control.mui-segmented-control-inverted{
+    text-align: center;
+}
+.mui-segmented-control .mui-control-item{
+    display: inline-table;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.my-input{
+    margin-top: 65px;
+    padding-left: 42px;
+}
+.my-input table tr td:first-child,.first-td{
+    text-align: right;
+    font-size: .48rem;
+    color: #d0d0d0;
+    height: 52px;
+    line-height: 52px;
+    margin-top: 23px;
+}
+.inputs{
+    margin-bottom: 0!important;
+    width: 480px!important;
+    padding:0 0 0 10px!important;
+    font-size: .5rem!important;
+}
+.inputs-end{
+    width: 140px!important;
+}
+.btn-go{
+
+    padding-top: 52px;
+}
+.btnGo{
+    display: block;
+    height:80px;
+    width:284px;
+    border-radius: 5px;
+    background: #009ce6;
+    color: #fff;
+    font-size: .72rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80px;
+    border:1px solid #b5b5b5;
+}
+.btnGo:hover{
+    color: #b1b1b1;
+}

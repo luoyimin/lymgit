@@ -1,0 +1,99 @@
+.my-mui-content{
+    background:none;
+}
+
+.apply-j{
+  
+    border-top:30px solid #ececec;
+    margin-top:0;
+    padding-top:22px;
+    padding-bottom:22px;
+    
+}
+  
+.null{
+    background:#00c6ff;
+    height:40px;
+    width:10px;
+    border-radius:10px;
+    float:left;
+}
+
+.tit{
+    font-size:0.58rem;
+    font-weight:bold;
+    color:#333333;
+    padding-left:20px; 
+    line-height:40px;
+}
+
+.apply-j-list ul{
+    padding:0;
+}
+
+.apply-j-list ul li{
+    list-style:none;
+    padding:16px 0 16px 0;
+    border-bottom:1px solid #f2f2f2;
+    margin-left:35px;
+    position:relative;
+}
+
+.apply-j-list ul li:nth-child(3){
+    border-bottom:none;
+}
+
+.apply-j-list ul li img{
+    float:left;
+}
+
+.apply-j-list ul li p{
+    padding-left:96px;
+    margin-bottom:15px;
+}
+
+.name{
+    font-size:0.48rem;
+    color:#585858;
+    margin-bottom:12px !important;
+}
+n
+.tel.id-num{
+    font-size:0.36rem;
+    color:#8d8d8d;
+}
+
+.agree{  
+    background:#ffb748 !important;
+    border:none !important;
+    color:#ffffff !important;
+}
+
+.del{
+    color:#666666;
+    border:1px solid #dcdcdc;
+}
+
+.agree,.del{
+    position:absolute !important;
+    right:26px;
+    bottom:52px;
+    font-size:0.36rem !important;
+    padding:12px 16px !important;
+    border-radius:10px !important;
+}
+
+.btn-b{
+    border-left:30px solid #ececec;
+    border-right:30px solid #ececec;
+    border-top:25px solid #ececec;
+    border-bottom:25px solid #ececec;
+}
+
+.add-btn{
+    background-color:#00c6ff !important;
+    padding:24px 286px !important;
+    font-size:0.46rem !important;
+    color:#ffffff !important;
+    border:none !important;
+}

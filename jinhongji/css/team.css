@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont/iconfont.eot');
+  src: url('../fonts/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/iconfont/iconfont.woff2') format('woff2'),
+      url('../fonts/iconfont/iconfont.woff') format('woff'),
+      url('../fonts/iconfont/iconfont.ttf') format('truetype'),
+      url('../fonts/iconfont/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont{
+  font-family:'iconfont';
+  font-style:normal;
+}
+
+.my-mui-content{
+    background:none;
+}
+
+.nav{
+    padding:33px 0 31px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.nav ul li{
+  list-style:none;
+  float: left;
+}
+
+.nav ul li:nth-child(1){
+  padding-left:130px;
+}
+
+.nav ul li:nth-child(2){
+    padding:0 72px 0 72px;
+}
+
+.nav ul li:nth-child(3){
+  padding-right:150px;
+}
+
+.nav ul li:nth-child(2) a{
+  font-weight:bold;
+  color:#00c6ff;
+}
+
+/* .nav ul li:nth-child(3) a:hover{
+    font-weight:bold;
+    color:#00c6ff;
+} */
+
+.c{
+    clear: both;
+}
+
+.nav ul li a{
+    font-size:0.44rem;
+    color:#333333;
+}
+
+.my-mui-scroll-wrapper{
+  top:272px;
+}
+
+.j-team{
+  
+  border-top:20px solid #ececec;
+  margin-top:0;
+  padding-top:27px;
+  padding-bottom:43px;
+  
+}
+
+.null{
+  background:#00c6ff;
+  height:40px;
+  width:5px;
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+  float:left;
+}
+
+.tit{
+  font-size:0.58rem;
+  font-weight:bold;
+  color:#333333;
+  padding-left:20px; 
+  line-height:40px;
+}
+
+.j-team-list ul{
+  margin:0;
+  padding:0;
+}
+
+.j-team-list ul li{
+  list-style:none;
+  padding-top:27px;
+  padding-bottom:27px;
+  margin-left:30px;
+  font-size:0.48rem;
+  color:#999999;
+  border-bottom:1px solid #f2f2f2;
+  position:relative;
+}
+
+.after{
+  position:absolute;
+  right:30px;
+  font-weight:bold;
+  font-size:0.48rem;
+  color:#d0d0d0;
+}
+
+.look-all-b{
+  padding-top:39px;
+  padding-bottom:39px;
+  text-align:center;
+}
+
+.look-all{
+  font-size:0.46rem;
+  color:#00c6ff;
+}
+
+.more{
+  background:#00c6ff;
+  border-radius:50%;
+  padding:6px;
+  font-size:0.22rem;
+  color:white;
+  margin-left:13px;
+}
+
+

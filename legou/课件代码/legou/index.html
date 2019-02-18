@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 视口，移动端页面必须的 -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- 神奇的绝招 -->
+    <meta name="viewport" content="width=750,target-densitydpi=device-dpi,maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript">
+    function setWidth(e){if(/Andriod/i.test(navigator.userAgent)){var f,d=window.innerWidth;(d!=e)&&(f=d/e),document.addEventListener("DOMContentLoaded",function(){var a=document.getElementsByTagName("body")[0];a.style.webkitTransformOrigin="left top";a.style.webkitTransform="scale("+f+")"},!1)}}setWidth(750);
+    </script>
+
+    <title>首页 - 乐购</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<!-- 最大的容器 -->
+	<div class="container">
+		<!-- header、section、footer、nav 这些HTML5的标签，主要作用就是用来标识（不是用于布局） -->
+		<!-- 简单讲，就是包住对应的内容即可 -->
+	    <header>
+	    	<!-- 头部 -->
+	    	<div class="header">
+	    		<img class="logo" src="images/logo.png" alt="">	
+	    		<!-- search 搜索 -->
+	    		<div class="search">
+	    			<i class="icon fl">&#xe6cf;</i>	<!-- 放大镜 -->
+	    			<input type="text" placeholder="输入商家、分类或商圈">
+	    		</div>
+	    		<i class="icon saoma">&#xe604;</i>	<!-- 扫码 -->
+	    		<i class="icon ring">&#xe6b0;</i>	<!-- 响铃 -->
+	    	</div>
+	    </header>
+
+	    <section>
+	    	<!-- 广告 ad 位 -->
+	    	<div class="ad">
+	    		<img src="images/ad1.jpg" alt="" class="img-response">
+	    	</div>
+	    </section>
+		
+		<section>
+			<!-- 广告下面的子菜单 menu -->
+			<div class="menu">
+				<ul>
+					<!-- 每个li设置宽度25%，内容水平居中 -->
+					<li>
+						<a href="">
+							<i class="icon mbg1">&#xe649;</i>	<!-- 行元素（没有大小的，要换成块元素） -->
+							<p>抽奖</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon mbg2">&#xe6d8;</i>
+							<p>兑换</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon mbg3">&#xe600;</i>
+							<p>促销</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon mbg4">&#xe65c;</i>
+							<p>闪送超市</p>
+						</a>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</section>
+		
+		<section>
+			<!-- 商品 goods 列表 -->
+			<div class="goods">
+				<img src="images/goods1.jpg" alt="">	<!-- 图片右浮动 -->
+				<h3>Fresh 奶</h3>
+				<!-- pirce 价格 -->
+				<p>光明畅优乳杆菌<span class="pirce">6</span>元/<span>2</span>瓶</p>
+				<p>更多优惠 低至5折</p>
+				<div class="clear"></div>
+			</div>
+
+			<div class="goods">
+				<img src="images/goods2.jpg" alt="">	<!-- 图片右浮动 -->
+				<h3>Fresh 奶</h3>
+				<!-- pirce 价格 -->
+				<p>光明畅优乳杆菌<span class="pirce">6</span>元/<span>2</span>瓶</p>
+				<p>更多优惠 低至5折</p>
+				<div class="clear"></div>
+			</div>
+
+			<div class="goods">
+				<img src="images/goods1.jpg" alt="">	<!-- 图片右浮动 -->
+				<h3>Fresh 奶</h3>
+				<!-- pirce 价格 -->
+				<p>光明畅优乳杆菌<span class="pirce">6</span>元/<span>2</span>瓶</p>
+				<p>更多优惠 低至5折</p>
+				<div class="clear"></div>
+			</div>
+
+			<div class="goods">
+				<img src="images/goods2.jpg" alt="">	<!-- 图片右浮动 -->
+				<h3>Fresh 奶</h3>
+				<!-- pirce 价格 -->
+				<p>光明畅优乳杆菌<span class="pirce">6</span>元/<span>2</span>瓶</p>
+				<p>更多优惠 低至5折</p>
+				<div class="clear"></div>
+			</div>
+		</section>
+		
+	    <footer>
+	    	<div class="footer">版权 2018 归xxx公司所有</div>
+	    </footer>
+	    
+	    <!-- 固定在底部 -->
+	    <nav>
+	    	<!-- 导航 -->
+			<div class="nav">
+				<ul>
+					<!-- 每个li设置宽度25%，内容水平居中 -->
+					<li>
+						<a href="">
+							<i class="icon">&#xe61e;</i>
+							<p>首页</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon">&#xe66e;</i>
+							<p>闪送超市</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon">&#xe64a;</i>
+							<p>我的</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon">&#xe60c;</i>
+							<p>￥0起送</p>
+						</a>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</nav>
+
+	    <!-- <article></article> 标识文章详细内容-->
+	</div>
+	
+    
+</body>
+</html>

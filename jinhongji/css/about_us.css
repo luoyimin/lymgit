@@ -1,0 +1,60 @@
+.look_detail{
+	background-color: #00c6ff;
+	opacity: 1;
+	color: #fff;
+	width: 236px;
+	height: 75px;
+	line-height: 75px;
+	text-align: center;
+	font-size: 0.44rem;
+	text-indent: 0;
+	position: absolute;
+	top: 50%;
+	left: 50px;
+}
+
+/* 头部导航位置 */
+.mui-bar-nav~.mui-content{
+	background: #fff;
+}
+.my-mui-content{
+	 padding-top: 120px!important;
+	 background: #fff!important;
+ }
+.mui-segmented-control .mui-control-item{
+	padding-bottom: 25px;
+}
+
+/* 图片边框清除 */
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border: 0;
+}
+
+/* 文字 */
+.mui-scroll{
+	text-align: center;
+}
+.mui-scroll h3{
+	font-size: .6rem;
+	color: #00c6ff;
+	margin-top: 82px;
+	margin-bottom: 60px;
+}
+.mui-scroll p{
+	font-size: .48rem;
+	color: #666666;
+	line-height: 58px;
+	letter-spacing: 2.5px;
+}
+.mui-control-item{
+	font-size: .48rem;
+}
+
+/* 导航栏蓝色下横线 */
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #00c6ff;
+	font-weight: bold;
+}
+.mui-slider .mui-slider-group .mui-slider-item img{
+	margin-top: 27px;
+}

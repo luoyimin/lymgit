@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>match</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"> -->
+	<meta name="viewport" content="width=750,target-densitydpi=device-dpi,maximum-scale=1.0, user-scalable=no">
+	<script type="text/javascript">
+		function setWidth(e) { if (/Andriod/i.test(navigator.userAgent)) { var f, d = window.innerWidth; (d != e) && (f = d / e), document.addEventListener("DOMContentLoaded", function () { var a = document.getElementsByTagName("body")[0]; a.style.webkitTransformOrigin = "left top"; a.style.webkitTransform = "scale(" + f + ")" }, !1) } } setWidth(750);
+	</script>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!--标准mui.css-->
+	<link rel="stylesheet" href="css/mui.min.css">
+	<!--App自定义的css-->
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/match.css" />
+	<style>
+		.mui-slider-indicator .mui-active.mui-indicator{
+			background: #00c6ff;
+			height: 20px;
+			width: 20px;
+		}
+
+
+
+		
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			.mui-bar~.mui-content .mui-fullscreen {
+				top: 44px;
+				height: auto;
+			}
+			.mui-pull-top-tips {
+				position: absolute;
+				top: -20px;
+				left: 50%;
+				margin-left: -25px;
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				z-index: 1;
+			}
+			.mui-bar~.mui-pull-top-tips {
+				top: 24px;
+			}
+			.mui-pull-top-wrapper {
+				width: 42px;
+				height: 42px;
+				display: block;
+				text-align: center;
+				background-color: #efeff4;
+				border: 1px solid #ddd;
+				border-radius: 25px;
+				background-clip: padding-box;
+				box-shadow: 0 4px 10px #bbb;
+				overflow: hidden;
+			}
+			.mui-pull-top-tips.mui-transitioning {
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+			}
+			.mui-pull-top-tips .mui-pull-loading {
+				/*-webkit-backface-visibility: hidden;
+				-webkit-transition-duration: 400ms;
+				transition-duration: 400ms;*/
+				
+				margin: 0;
+			}
+			.mui-pull-top-wrapper .mui-icon,
+			.mui-pull-top-wrapper .mui-spinner {
+				margin-top: 7px;
+			}
+			.mui-pull-top-wrapper .mui-icon.mui-reverse {
+				/*-webkit-transform: rotate(180deg) translateZ(0);*/
+			}
+
+
+
+			/* 上拉加载框 */
+			.mui-pull-bottom-tips {
+				text-align: center;
+				background-color: #fff;
+				font-size: 15px;
+				line-height: 40px;
+				color: #777;
+			}
+
+
+
+			.mui-pull-top-canvas {
+				overflow: hidden;
+				background-color: #fafafa;
+				border-radius: 40px;
+				box-shadow: 0 4px 10px #bbb;
+				width: 40px;
+				height: 40px;
+				margin: 0 auto;
+			}
+			.mui-pull-top-canvas canvas {
+				width: 40px;
+			}
+			.mui-slider-indicator.mui-segmented-control {
+				background-color: #fff;
+				border-bottom: 1px solid #e5e5e5;
+			}
+	</style>
+</head>
+
+<body>
+	<!--侧滑菜单容器  - 最大容器-->
+	<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+		<!--右侧菜单部分-->
+
+
+		<aside id="offCanvasSide" class="mui-off-canvas-right my-mui-draggable">
+			<div id="offCanvasSideScroll" class="mui-scroll-wrapper ">
+				<div class="mui-scroll ">
+					<div class="content my-content">
+						<p>
+							<button id="offCanvasHide" type="button" class="mui-btn mui-btn-danger mui-btn-block my-btn">×</button>
+						</p>
+					</div>
+					<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted my-table-view my-mui-table-view-cell">
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="index.html" class="mui-navigate-right my-mui-navigate-right">
+								首页
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="contact_us.html" class="mui-navigate-right my-mui-navigate-right">
+								关于金鸿基
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="match.html" class="mui-navigate-right my-mui-navigate-right">
+								赛事中心
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="video_list.html" class="mui-navigate-right my-mui-navigate-right">
+								赛事视频
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="apply_team.html" class="mui-navigate-right my-mui-navigate-right">
+								报名中心
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="team_detail.html" class="mui-navigate-right my-mui-navigate-right">
+								直播间
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="about_us.html" class="mui-navigate-right my-mui-navigate-right">
+								公司资讯
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="my-team.html" class="mui-navigate-right my-mui-navigate-right">
+								服务中心
+							</a>
+						</li>
+						<li class="mui-table-view-cell my-mui-table-view-cell">
+							<a href="contact_us.html" class="mui-navigate-right my-mui-navigate-right">
+								联系我们
+							</a>
+						</li>
+					</ul>
+					<div class="footbtn">
+						<a href="register.html" class="my-text">
+							登录
+						</a>
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		<!--主页部分-->
+		<div class="mui-inner-wrap">
+			<!--页面头部-->
+			<header class="mui-bar mui-bar-nav my-mui-bar">
+				<a class="mui-action-back mui-icon mui-pull-left">
+					<img src="images/logo.png" alt="">
+				</a>
+				<h1 class="mui-title"></h1>
+				<a id="offCanvasBtn" href="#offCanvasSide" class="mui-icon mui-icon-bars mui-pull-right my-nav"></a>
+			</header>
+
+
+			<!-- off-canvas backdrop 遮罩层-->
+			<div class="mui-off-canvas-backdrop"></div>
+			
+
+			<!--页面内容-->
+			<div class="mui-content">
+				<div id="slider" class="mui-slider mui-fullscreen" style="margin-top:40px;">
+					<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+						<div class="mui-scroll">
+							<a class="mui-control-item mui-active" href="#item1mobile">
+								贺岁杯
+							</a>
+							<a class="mui-control-item" href="#item2mobile">
+								骑行
+							</a>
+							<a class="mui-control-item" href="#item3mobile">
+								沙滩排球
+							</a>
+							<a class="mui-control-item" href="#item4mobile">
+								徒步
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-group">
+						<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+							<div id="scroll1" class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<div class="mui-table-view">
+										<div class="mui-table-view-cell my_cell oo">
+											<img src="images/match_03.png" alt="">
+
+											<!-- 图片下面字体 -->
+											<div class="zt zz">
+												<p>七彩丹霞.茶卡盐湖.莫</p>												
+											</div>
+
+											<div class="zt1 zz1">
+												<p><i class="icon1">&#xe62e;</i>2017-10-01</p>
+												<p><i class="icon">&#xe604;</i>广州 / 出发</p>																							
+											</div>
+
+
+										</div>
+										<div class="clear"></div>
+									</div>
+
+									<!-- 第二个图片和字体 -->
+									<div class="mui-table-view">
+										<div class="mui-table-view-cell my_cell oo">
+											<img src="images/match_06.png" alt="">
+
+											<!-- 图片下面字体 -->
+											<div class="zt zz">
+												<p>七彩丹霞.茶卡盐湖.莫</p>												
+											</div>
+
+											<div class="zt1 zz1">
+												<p><i class="icon1">&#xe62e;</i>2017-10-01</p>
+												<p><i class="icon">&#xe604;</i>广州 / 出发</p>																						
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+
+
+
+						<div id="item2mobile" class="mui-slider-item mui-control-content">
+							<div class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<div class="mui-scroll">
+										<div class="mui-table-view">
+											<div class="mui-table-view-cell my_cell oo">
+												<img src="images/apply_list_06.png" alt="">
+
+
+												<!-- 图片下面字体 -->
+												<div class="zt zz">
+													<p>七彩丹霞.茶卡盐湖.莫</p>												
+												</div>
+	
+												<div class="zt1 zz1">
+													<p><i class="icon1">&#xe62e;</i>2017-10-01</p>
+													<p><i class="icon">&#xe604;</i>广州 / 出发</p>																							
+												</div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+
+										<!-- 第二个图片和字体 -->
+										<div class="mui-table-view">
+											<div class="mui-table-view-cell my_cell oo">
+												<img src="images/apply_list_06.png" alt="">
+
+												<!-- 图片下面字体 -->
+												<div class="zt ">
+													<p>七彩丹霞.茶卡盐湖.莫高...</p>
+													<i>￥<span>450</span>元</i>
+												</div>
+
+												<div class="zt1">
+													<p><i class="icon1">&#xe62e;</i>2017-10-01</p>
+													<p><i class="icon">&#xe604;</i>广州 / 出发</p>
+													<p><i class="icon">&#xe606;</i>9/20人</p>
+													<span>进行中</span>
+												</div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div id="item3mobile" class="mui-slider-item mui-control-content">
+							<div class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<div class="mui-scroll">
+										<div class="mui-table-view">
+											<div class="mui-table-view-cell my_cell oo">
+												<img src="images/apply_list_06.png" alt="">
+
+												<!-- 图片下面字体 -->
+												<div class="zt">
+													<p>七彩丹霞.茶卡盐湖.莫高...</p>
+													<i>￥<span>450</span>元</i>
+												</div>
+
+												<div class="zt1">
+													<p><i class="icon1">&#xe62e;</i>2017-10-01</p>
+													<p><i class="icon">&#xe604;</i>广州 / 出发</p>
+													<p><i class="icon">&#xe606;</i>9/20人</p>
+													<span>进行中</span>
+												</div>
+
+
+											</div>
+											<div class="clear"></div>
+										</div>
+
+
+										<!-- 第二个图片和字体 -->
+										<div class="mui-table-view">
+											<div class="mui-table-view-cell my_cell oo">
+												<img src="images/apply_list_06.png" alt="">
+
+												<!-- 图片下面字体 -->
+												<div class="zt">
+													<p>七彩丹霞.茶卡盐湖.莫高...</p>													
+												</div>
+
+												<div class="zt1">
+													<p><i class="icon1">&#xe62e;</i>2017-10-01</p>
+													<p><i class="icon">&#xe604;</i>广州 / 出发</p>									
+												</div>
+												<div class="clear"></div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div id="item4mobile" class="mui-slider-item mui-control-content">
+							<div class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<div class="mui-scroll">
+										<div class="mui-table-view">
+											<div class="mui-table-view-cell my_cell oo">
+												<img src="images/apply_list_06.png" alt="">
+
+												<!-- 图片下面字体 -->
+												<div class="zt">
+													<p>七彩丹霞.茶卡盐湖.莫高...</p>
+													<i>￥<span>450</span>元</i>
+												</div>
+
+												<div class="zt1">
+													<p><i class="icon1">&#xe62e;</i>2017-10-01</p>
+													<p><i class="icon">&#xe604;</i>广州 / 出发</p>
+													<p><i class="icon">&#xe606;</i>9/20人</p>
+													<span>进行中</span>
+												</div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+
+										<!-- 第二个图片和字体 -->
+										<div class="mui-table-view">
+											<div class="mui-table-view-cell my_cell oo">
+												<img src="images/apply_list_06.png" alt="">
+
+												<!-- 图片下面字体 -->
+												<div class="zt">
+													<p>七彩丹霞.茶卡盐湖.莫高...</p>
+												</div>
+
+												<div class="zt1">
+													<p><i class="icon1">&#xe62e;</i>2017-10-01</p>
+													<p><i class="icon">&#xe604;</i>广州 / 出发</p>
+												</div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/mui.pullToRefresh.js"></script>
+<script src="js/mui.pullToRefresh.material.js"></script>
+<script>
+	mui.init();
+	(function ($) {
+		//阻尼系数
+		var deceleration = mui.os.ios ? 0.003 : 0.0009;
+		$('.mui-scroll-wrapper').scroll({
+			bounce: false,
+			indicators: true, //是否显示滚动条
+
+
+			deceleration: deceleration
+		});
+		$.ready(function () {
+			//循环初始化所有下拉刷新，上拉加载。
+			$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function (index, pullRefreshEl) {
+				$(pullRefreshEl).pullToRefresh({
+					down: {
+						callback: function () {
+							var self = this;
+							setTimeout(function () {
+								var a = self.element.querySelector('.mui-table-view');
+								a.insertBefore(createFragment(a, index, 1, true), a.firstChild);
+								self.endPullDownToRefresh();
+							}, 1000);
+						}
+					},
+					up: {
+						callback: function () {
+							var self = this;
+							setTimeout(function () {
+								var a = self.element.querySelector('.mui-table-view');
+								a.appendChild(createFragment(a, index, 1));
+								self.endPullUpToRefresh();
+							}, 1000);
+						}
+					}
+				});
+			});
+			var createFragment = function (a, index, count, reverse) {
+				var length = a.querySelectorAll('b').length;
+				var fragment = document.createDocumentFragment();
+				var b;
+				for (var i = 0; i < count; i++) {
+					b = document.createElement('div');
+					b.className = 'mui-table-view-cell my_cell oo';
+					b.innerHTML = '<img src="images/match_06.png" alt="">' +
+						'<div class="zt zz"><p>七彩丹霞.茶卡盐湖.莫</p></div>' +
+						'<div class="zt1 zz1"><p><i class="icon1">&#xe62e;</i>2017-10-01</p><p><i class="icon">&#xe604;</i>广州 / 出发</p>';
+					fragment.appendChild(b);
+				}
+				return fragment;
+			};
+		});
+	})(mui);
+
+
+    var href=document.getElementsByClassName('my-mui-navigate-right');
+    console.log(href);
+    for (var i = 0; i < href.length; i++) {
+        href[i].ontouchend = function () {
+            window.location.href = this.getAttribute("href");
+        }
+    };
+    var href=document.getElementsByClassName('my-text');
+    console.log(href);
+    for (var i = 0; i < href.length; i++) {
+        href[i].ontouchend = function () {
+            window.location.href = this.getAttribute("href");
+        }
+    };
+</script>
+
+</html>
